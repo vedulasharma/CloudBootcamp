@@ -1,0 +1,9 @@
+---
+applications:
+- name: pcf-demo-js
+  host: pcf-demo-js
+  memory: 100M
+  instances: 1
+  disk_quota: 1G
+  command: node server.js
+  buildpack: nodejs_buildpack

@@ -1,0 +1,9 @@
+---
+applications:
+- name: dmw-pcf-demo-basic
+  memory: 1024M
+  path: target/pcf-demo-basic.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack
+  timeout: 60
+  env:
+    JAVA_OPTS: -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=10009

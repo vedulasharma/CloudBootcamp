@@ -1,0 +1,9 @@
+---
+applications:
+- name: dmw-pcf-demo-mysql
+  memory: 1024M
+  path: target/pcf-demo-mysql.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack
+  timeout: 60
+  services:
+  - mydb
