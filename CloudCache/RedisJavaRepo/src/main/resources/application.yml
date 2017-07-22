@@ -1,0 +1,27 @@
+#Wed Oct 07 15:48:36 EDT 2015
+# API Info
+appName: StoreSettings
+appDescription: Store Settings Service
+buildNumber: 1
+contactEmail: kyle_dye@homedepot.com
+
+# App Info
+releaseNumber: 0.0.1
+buildTimeStamp: 20151031131313
+
+# Auto configuration modifications
+management:
+  context-path: /manage
+spring:
+  application:
+    name: ${COMPASS_APP_NAME:StoreSettings}
+  boot:
+    admin:
+      url: http\://localhost\:8082
+server:
+  port: 8082
+  contextPath: 
+      
+# Error Location
+error:
+  link: http://errordetails.apps-np.homedepot.com/errors/v1/

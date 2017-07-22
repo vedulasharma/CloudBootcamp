@@ -1,0 +1,8 @@
+---
+applications:
+- name: Receiving-Router
+  host: ReceivingUI-Router
+  command: node app.js
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  services:
+   - sif-redis
